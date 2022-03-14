@@ -1,4 +1,4 @@
-import 'package:animation_library/ui/widget/expandable_widget.dart';
+import 'package:animation_library/expandable_searcher/widget/expandable_widget.dart';
 import 'package:flutter/material.dart';
 
 class ExpandableSearcherPage extends StatelessWidget {

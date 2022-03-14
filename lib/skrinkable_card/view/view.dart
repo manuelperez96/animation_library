@@ -1,0 +1,1 @@
+export 'shrinkable_card_page.dart';

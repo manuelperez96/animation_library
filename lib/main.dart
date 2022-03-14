@@ -1,6 +1,7 @@
-import 'package:animation_library/ui/page/expandable_fab_page.dart';
-import 'package:animation_library/ui/page/expandable_searcher.dart';
-import 'package:animation_library/ui/page/shrinkable_card_page.dart';
+import 'package:animation_library/awoseme_app_bar/awoseme_app_bar.dart';
+import 'package:animation_library/expandable_fab/expandable_fab.dart';
+import 'package:animation_library/expandable_searcher/expandable_searcher.dart';
+import 'package:animation_library/skrinkable_card/skrinkable_card.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(const App());
@@ -41,8 +42,13 @@ class Home extends StatelessWidget {
         ),
         const Divider(),
         ListTile(
-          title: const Text('ExpandableSearcher'),
+          title: const Text('Expandable Searcher'),
           onTap: () => _navigateTo(context, const ExpandableSearcherPage()),
+        ),
+        const Divider(),
+        ListTile(
+          title: const Text('Awesome AppBar'),
+          onTap: () => _navigateTo(context, const AwesomeAppBarPage()),
         ),
       ],
     );
