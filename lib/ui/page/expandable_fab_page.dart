@@ -1,4 +1,4 @@
-import 'package:animation_library/src/expandable_fab.dart';
+import 'package:animation_library/ui/widget/expandable_fab.dart';
 import 'package:flutter/material.dart';
 
 class ExpandableFabPage extends StatefulWidget {

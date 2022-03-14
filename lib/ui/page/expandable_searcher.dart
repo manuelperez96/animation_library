@@ -1,3 +1,4 @@
+import 'package:animation_library/ui/widget/expandable_widget.dart';
 import 'package:flutter/material.dart';
 
 class ExpandableSearcherPage extends StatelessWidget {
@@ -19,20 +20,38 @@ class ExpandableSearcherView extends StatefulWidget {
 }
 
 class _ExpandableSearcherViewState extends State<ExpandableSearcherView> {
+
+  var _isOpen = false;
+
   @override
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.all(16),
       child: Column(
+        crossAxisAlignment: CrossAxisAlignment.stretch,
         children: <Widget>[
           Flexible(
             child: Row(
-              children: const <Widget>[
-                Text('Introduzca criterio'),
-                SizedBox(width: 16),
-                Flexible(
-                  child: ExpandableSearcher(
-                    isExpanded: true,
+              children: <Widget>[
+                const Text('Introduzca criterio'),
+                const SizedBox(width: 16),
+                Expanded(
+                  child: ExpandedWidget(
+                    isOpen: _isOpen,
+                    closeIcon: const Icon(Icons.remove),
+                    openIcon: const Icon(Icons.add),
+                    onChanged: _updateSearcher,
+                    child:  const TextField(
+                      maxLines: 1,
+                      cursorColor: Colors.white,
+                      decoration: InputDecoration(
+                        contentPadding: EdgeInsets.symmetric(horizontal: 9.5, vertical: 7),
+                        border: OutlineInputBorder(
+                          borderRadius: BorderRadius.all(Radius.circular(22)),
+                          borderSide: BorderSide.none,
+                        ),
+                      ),
+                    ),
                   ),
                 ),
               ],
@@ -41,6 +60,12 @@ class _ExpandableSearcherViewState extends State<ExpandableSearcherView> {
         ],
       ),
     );
+  }
+
+  void _updateSearcher(bool value) {
+    setState(() {
+      _isOpen = value;
+    });
   }
 }
 

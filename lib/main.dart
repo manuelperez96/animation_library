@@ -1,6 +1,6 @@
-import 'package:animation_library/expandable_fab_page.dart';
-import 'package:animation_library/expandable_searcher.dart';
-import 'package:animation_library/shrinkable_card_page.dart';
+import 'package:animation_library/ui/page/expandable_fab_page.dart';
+import 'package:animation_library/ui/page/expandable_searcher.dart';
+import 'package:animation_library/ui/page/shrinkable_card_page.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(const App());
@@ -44,11 +44,6 @@ class Home extends StatelessWidget {
           title: const Text('ExpandableSearcher'),
           onTap: () => _navigateTo(context, const ExpandableSearcherPage()),
         ),
-        const Divider(),
-        ListTile(
-          title: const Text('Take a date'),
-          onTap: () => _navigateTo(context, const CalendarPickerPage()),
-        ),
       ],
     );
   }
@@ -61,23 +56,3 @@ class Home extends StatelessWidget {
       );
 }
 
-class CalendarPickerPage extends StatelessWidget {
-  const CalendarPickerPage({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      body: const Center(child: Text('Take a date')),
-      floatingActionButton: FloatingActionButton(
-        onPressed: () => showDatePicker(
-          context: context,
-          initialDate: DateTime.now(),
-          firstDate: DateTime.now().subtract(const Duration(days: 10)),
-          lastDate: DateTime.now().add(const Duration(days: 100)),
-
-        ),
-        child: const Icon(Icons.calendar_today),
-      ),
-    );
-  }
-}
