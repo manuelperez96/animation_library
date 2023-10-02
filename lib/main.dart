@@ -2,6 +2,7 @@ import 'package:animation_library/awoseme_app_bar/awoseme_app_bar.dart';
 import 'package:animation_library/expandable_fab/expandable_fab.dart';
 import 'package:animation_library/expandable_searcher/expandable_searcher.dart';
 import 'package:animation_library/skrinkable_card/skrinkable_card.dart';
+import 'package:animation_library/three_d_flipped_card/three_d_flipped_card.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(const App());
@@ -50,6 +51,12 @@ class Home extends StatelessWidget {
           title: const Text('Awesome AppBar'),
           onTap: () => _navigateTo(context, const AwesomeAppBarPage()),
         ),
+        const Divider(),
+        ListTile(
+          title: const Text('3D Flipped Card'),
+          onTap: () => _navigateTo(context, const AlbumPage()),
+        ),
+        const Divider(),
       ],
     );
   }
