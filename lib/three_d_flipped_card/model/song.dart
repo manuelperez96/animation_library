@@ -1,5 +1,3 @@
-import 'package:flutter/material.dart';
-
 final songList = [
   Song(image: 'assets/cover1.jpg', name: 'Song 1'),
   Song(image: 'assets/cover2.jpg', name: 'Song 2'),
