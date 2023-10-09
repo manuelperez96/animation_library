@@ -114,7 +114,7 @@ class _ExpandableSearcherState extends State<ExpandableSearcher> {
                   color: Colors.brown,
                   borderRadius: BorderRadius.circular(50)
               ),
-              child: TextField(),
+              child: const TextField(),
             ),
           )
         ],

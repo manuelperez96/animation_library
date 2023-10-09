@@ -21,11 +21,11 @@ class _ExpandableFabPageState extends State<ExpandableFabPage> {
           children: [
             Text(
               'Counter value:',
-              style: Theme.of(context).textTheme.headline5,
+              style: Theme.of(context).textTheme.headlineSmall,
             ),
             Text(
               _counter.toString(),
-              style: Theme.of(context).textTheme.headline6,
+              style: Theme.of(context).textTheme.headlineMedium,
             ),
           ],
         ),

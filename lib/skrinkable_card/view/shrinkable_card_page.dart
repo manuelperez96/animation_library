@@ -90,10 +90,10 @@ class _ShrinkableCardViewState extends State<ShrinkableCardView> {
                             top: Radius.circular(20),
                           ),
                         ),
-                        child: SizedBox(
+                        child: const SizedBox(
                           height: 150,
                           child: Row(
-                            children: const <Widget>[
+                            children: <Widget>[
                               Expanded(
                                 child: FlutterLogo(
                                   size: 50,
