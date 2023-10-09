@@ -196,14 +196,15 @@ class _AnimatedBottomNavigationBarState
                         duration: const Duration(milliseconds: 500),
                         builder: (context, value, child) {
                           return Transform.translate(
-                            offset: Offset(0, -30 * Curves.bounceOut.transform(value)),
+                            offset: Offset(
+                                0, -20 * Curves.bounceOut.transform(value)),
                             child: SizedBox.square(
-                              dimension: 60,
+                              dimension: 50,
                               child: CustomPaint(
                                 painter: CircleBackgroundPainter(
                                   progress: Curves.decelerate.transform(value),
                                   color: selectedCircleColor,
-                                  radius: 30,
+                                  radius: 25,
                                 ),
                                 child: IconTheme(
                                   data: isSelected
@@ -257,6 +258,7 @@ class _AnimatedBottomNavigationBarState
                   },
                 ),
               ),
+              //SizedBox(height: 8,)
             ],
           ),
         ),
