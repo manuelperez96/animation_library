@@ -1,4 +1,4 @@
-import 'package:animation_library/animated_bottom_navigation_bar/animated_bottom_navigation_bar.dart';
+import 'package:animation_library/animated_bounce_bottom_navigation_bar/animated_bounce_bottom_navigation_bar.dart';
 import 'package:animation_library/awoseme_app_bar/awoseme_app_bar.dart';
 import 'package:animation_library/expandable_fab/expandable_fab.dart';
 import 'package:animation_library/expandable_searcher/expandable_searcher.dart';
