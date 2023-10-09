@@ -1,3 +1,4 @@
+import 'package:animation_library/animated_bottom_navigation_bar/animated_bottom_navigation_bar.dart';
 import 'package:animation_library/awoseme_app_bar/awoseme_app_bar.dart';
 import 'package:animation_library/expandable_fab/expandable_fab.dart';
 import 'package:animation_library/expandable_searcher/expandable_searcher.dart';
@@ -55,6 +56,11 @@ class Home extends StatelessWidget {
         ListTile(
           title: const Text('3D Flipped Card'),
           onTap: () => _navigateTo(context, const AlbumPage()),
+        ),
+        const Divider(),
+         ListTile(
+          title: const Text('Animated Bounce Bottom Bar'),
+          onTap: () => _navigateTo(context, const AnimatedBounceBottomBarPage()),
         ),
         const Divider(),
       ],
