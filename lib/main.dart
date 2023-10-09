@@ -1,3 +1,4 @@
+import 'package:animation_library/animated_bottom_nagitation_bar/animated_bottom_navigation_bar.dart';
 import 'package:animation_library/animated_bounce_bottom_navigation_bar/animated_bounce_bottom_navigation_bar.dart';
 import 'package:animation_library/awoseme_app_bar/awoseme_app_bar.dart';
 import 'package:animation_library/expandable_fab/expandable_fab.dart';
@@ -61,6 +62,11 @@ class Home extends StatelessWidget {
          ListTile(
           title: const Text('Animated Bounce Bottom Bar'),
           onTap: () => _navigateTo(context, const AnimatedBounceBottomBarPage()),
+        ),
+        const Divider(),
+          ListTile(
+          title: const Text('Animated Bottom Bar'),
+          onTap: () => _navigateTo(context, const AnimatedBottomNavigationBarPage()),
         ),
         const Divider(),
       ],
