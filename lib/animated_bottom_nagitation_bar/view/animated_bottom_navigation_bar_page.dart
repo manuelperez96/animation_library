@@ -93,25 +93,6 @@ class _AnimatedBottomNavigationBarPageState
             ),
           ],
         ),
-        // bottomNavigationBar: BottomNavigationBar(
-        //   items: [
-        //     BottomNavigationBarItem(
-        //       icon: Icon(Icons.home),
-        //       label: 'Home',
-        //       backgroundColor: Colors.red,
-        //     ),
-        //     BottomNavigationBarItem(
-        //       icon: Icon(Icons.search),
-        //       label: 'Search',
-        //       backgroundColor: Colors.blue,
-        //     ),
-        //     BottomNavigationBarItem(
-        //       icon: Icon(Icons.person),
-        //       label: 'Profile',
-        //       backgroundColor: Colors.yellow,
-        //     ),
-        //   ],
-        // ),
       ),
     );
   }
